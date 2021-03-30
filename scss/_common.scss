@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+body, a {
+  color: $main-color;
+}
+
+body {
+  @include regular();
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
