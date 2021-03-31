@@ -7,10 +7,21 @@ body, a {
 }
 
 body {
+  margin: 0;
+  padding: 0;
   @include regular();
 }
 
 .container {
   max-width: 1170px;
   margin: auto;
+}
+
+.btn {
+  border: none;
+  padding: 25px 45px;
+  text-transform: uppercase;
+  background-color: $primary-color;
+  color: #fff;
+  @include bold();
 }

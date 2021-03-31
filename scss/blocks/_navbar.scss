@@ -1,4 +1,9 @@
 .navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #fff;
   &-wrap {
     display: flex;
     justify-content: space-between;
@@ -28,6 +33,28 @@
   }
 }
 .menu {
+  position: fixed;
+  width: 100%;
+  top: 80px;
+  padding: 16px 0;
+  background: $primary-color;
+  transition: 0.2s;
+  transform: translateY(-300%);
+  &-active {
+    transform: translateY(0);
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-style: 17px;
+    color: #fff;
+    @include bold();
+  }
   &-btn {
     display: flex;
     flex-direction: column;
